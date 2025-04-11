@@ -1,0 +1,13 @@
+:root {
+    --primary: #2E8B57;
+    --primary-light: #3CB371;
+    --secondary: #F0EAD6;
+    --accent: #D4EDD4;
+    --dark: #2F4F4F;
+    --gradient: linear-gradient(135deg, #2E8B57, #3CB371);
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.8);
+}

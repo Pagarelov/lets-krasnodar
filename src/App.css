@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+main {
+    margin-top: 112px;
+}
+
+
+/* Общие медиа-запросы для всех компонентов */
+@media (max-width: 1200px) {
+    .sliderContainer,
+    .popular .container,
+    .header .container,
+    .contacts .container {
+        max-width: 1000px;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Hero Section */
+    .slide {
+        height: 400px;
+    }
+
+    /* Popular Destinations */
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Header */
+    .logo {
+        font-size: 2rem;
+    }
+
+    nav {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Общие стили */
+    :root {
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .sliderContainer {
+        padding: 0 1rem;
+    }
+
+    .slide {
+        height: 350px;
+    }
+
+    .prevButton,
+    .nextButton {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    /* Popular Destinations */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Header */
+    .header {
+        padding: 1rem 0;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Footer */
+    .contacts .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hero Section */
+    .slide {
+        height: 300px;
+    }
+
+    .slideContent {
+        padding: 1rem;
+    }
+
+    .slideTitle {
+        font-size: 1.5rem !important;
+    }
+
+    .slideDescription {
+        font-size: 0.9rem !important;
+    }
+
+    .dotsContainer {
+        bottom: 10px;
+    }
+
+    /* Header */
+    nav {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Popular Destinations */
+    .card {
+        margin: 0 0.5rem;
+    }
+
+    /* Footer */
+    .socialLink {
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Hero Section */
+    .slide {
+        height: 250px;
+    }
+
+    .prevButton,
+    .nextButton {
+        display: none;
+    }
+
+    /* Header */
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    nav a {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    .socialIcons {
+        gap: 1rem;
+    }
+}
+
+/* Landscape адаптация */
+@media (max-height: 500px) and (orientation: landscape) {
+    .slide {
+        height: 250px;
+    }
+
+    .header {
+        position: static;
+    }
+
+    .popular {
+        padding: 2rem 0;
+    }
+}
