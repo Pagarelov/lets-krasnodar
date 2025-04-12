@@ -77,7 +77,7 @@ const Header = () => {
                     </ScrollLink>
 
                     <ScrollLink
-                        to="tours"
+                        to="vacations"
                         spy={true}
                         smooth={true}
                         offset={-70}
@@ -85,7 +85,7 @@ const Header = () => {
                         className={styles.link}
                         onClick={closeMenu}
                     >
-                        Услуги
+                        Отдых
                     </ScrollLink>
 
 

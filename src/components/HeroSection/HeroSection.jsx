@@ -43,15 +43,15 @@ const HeroSection = ({id}) => {
             >
                 {slides.map((slide, index) => (
                     <div key={index} className={styles.slide}>
+                        <div className={styles.textContainer}>
+                            <p className={styles.slideDescription}>{slide.description}</p>
+                            <h3 className={styles.slideTitle}>{slide.title}</h3>
+                        </div>
                         <img
                             src={slide.image}
                             alt={slide.title}
                             className={styles.slideImage}
                         />
-                        <div className={styles.slideContent}>
-                            <p className={styles.slideDescription}>{slide.description}</p>
-                            <h3 className={styles.slideTitle}>{slide.title}</h3>
-                        </div>
                     </div>
                 ))}
             </div>

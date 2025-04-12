@@ -11,37 +11,37 @@
 }
 
 .slide {
-    position: relative;
+    display: flex;
     min-width: 100%;
     height: 500px;
     flex-shrink: 0;
 }
 
+.textContainer {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
 .slideImage {
-    width: 100%;
+    width: 50%;
     height: 100%;
     object-fit: cover;
 }
 
-.slideContent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.slideTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.slide:hover .slideContent {
-    opacity: 1;
+.slideDescription {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
 }
 
 .prevButton,
@@ -91,4 +91,31 @@
 
 .activeDot {
     background: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+    .slide {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .textContainer {
+        width: 100%;
+        padding: 20px;
+        order: 2;
+    }
+
+    .slideImage {
+        width: 100%;
+        height: 300px;
+        order: 1;
+    }
+
+    .slideTitle {
+        font-size: 1.8rem;
+    }
+
+    .slideDescription {
+        font-size: 1rem;
+    }
 }
