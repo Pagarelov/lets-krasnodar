@@ -8,6 +8,8 @@ import TourPlan from "./components/TourPlan/TourPlan.jsx";
 import NotFound from "./components/NotFound/NotFound.jsx";
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './App.css';
+import PlacesList from "./components/PlacesList/PlacesList.jsx";
+import Vacation from "./components/Vacation/Vacation.jsx";
 
 function App() {
     return (
@@ -22,13 +24,16 @@ function App() {
                         <main>
                             <HeroSection id="home" />
                             <PopularDestinations />
-                            <AboutUs id="about" />
                             <TourPlan id="tours"/>
+                            <Vacation id="vacation" />
+                            <AboutUs id="about" />
+                            <PlacesList/>
                         </main>
                     } />
 
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/tours" element={<TourPlan />} />
+                    <Route path="/vacation" element={<Vacation />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
 

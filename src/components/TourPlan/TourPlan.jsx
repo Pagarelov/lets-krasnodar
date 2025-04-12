@@ -18,7 +18,7 @@ const TourPlan = () => {
 
                 <div className={styles.routeCard}>
                     <div className={styles.routeHeader}>
-                        <h3 className={styles.routeTitle}>Маршрут на квадрацикле</h3>
+                        <h3 className={styles.routeTitle}>Маршрут на квадроцикле</h3>
                         <div className={styles.routeDetails}>
                             <span className={styles.direction}>↩ развернитесь</span>
                             <span className={styles.distance}>50 м</span>

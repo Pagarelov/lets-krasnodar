@@ -33,7 +33,7 @@ const Header = () => {
                     duration={500}
                     className={styles.logo}
                 >
-                    Lets Krasnodarskiy Kray
+                    Map App
                 </ScrollLink>
 
                 <nav
@@ -77,7 +77,7 @@ const Header = () => {
                     </ScrollLink>
 
                     <ScrollLink
-                        to="vacations"
+                        to="vacation"
                         spy={true}
                         smooth={true}
                         offset={-70}

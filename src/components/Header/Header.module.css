@@ -29,7 +29,6 @@
     font-family: 'Comfortaa', cursive;
     font-size: 2rem;
     color: var(--text-primary);
-    text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.3s ease;
     position: relative;
