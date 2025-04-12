@@ -2,7 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 main {
-    margin-top: 112px;
+    margin-top: 200px;
 }
 
 
@@ -51,6 +51,10 @@ main {
 
     .slide {
         height: 350px;
+    }
+
+    main {
+        margin-top: 200px;
     }
 
     .prevButton,

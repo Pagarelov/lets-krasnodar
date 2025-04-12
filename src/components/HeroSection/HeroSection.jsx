@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './HeroSection.module.css';
 
-const HeroSection = () => {
+const HeroSection = ({id}) => {
     const slides = [
         {
             image: '/img/img1.png',
@@ -36,10 +36,10 @@ const HeroSection = () => {
     };
 
     return (
-        <div className={styles.sliderContainer}>
+        <div id={id} className={styles.sliderContainer}>
             <div
                 className={styles.sliderWrapper}
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+                style={{transform: `translateX(-${currentIndex * 100}%)`}}
             >
                 {slides.map((slide, index) => (
                     <div key={index} className={styles.slide}>
