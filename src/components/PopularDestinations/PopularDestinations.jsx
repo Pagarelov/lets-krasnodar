@@ -20,7 +20,7 @@ const PopularDestinations = () => {
     ];
 
     return (
-        <section className={styles.popular} id="tours">
+        <section className={styles.popular}>
             <div className={styles.container}>
                 <h2 className={styles.title}>Популярные направления</h2>
                 <div className={styles.cards}>

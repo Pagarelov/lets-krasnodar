@@ -1,0 +1,223 @@
+.tourPlan {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.contentWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.textContent {
+    padding-right: 30px;
+}
+
+.mainTitle {
+    font-size: 2.5rem;
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #636e72;
+    line-height: 1.6;
+}
+
+.routeCard {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.routeHeader {
+    margin-bottom: 25px;
+}
+
+.routeTitle {
+    font-size: 1.5rem;
+    color: #2d3436;
+    margin-bottom: 1rem;
+}
+
+.routeDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.direction {
+    color: #0984e3;
+    font-weight: 500;
+}
+
+.distance {
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+.routeButton {
+    width: 100%;
+    padding: 16px;
+    background: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.routeButton:hover {
+    background: #0873c4;
+    transform: translateY(-2px);
+}
+
+.mapModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+}
+
+.modalContent {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow: hidden;
+    z-index: 1;
+    animation: modalEnter 0.3s ease;
+}
+
+@keyframes modalEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.closeButton:hover {
+    background: white;
+    transform: rotate(90deg);
+}
+
+.closeButton svg {
+    width: 20px;
+    height: 20px;
+}
+
+.mapContainer {
+    height: 70vh;
+    min-height: 400px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    .contentWrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .textContent {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .mainTitle {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tourPlan {
+        padding: 60px 15px;
+    }
+
+    .mainTitle {
+        font-size: 1.8rem;
+    }
+
+    .routeCard {
+        padding: 20px;
+    }
+
+    .routeTitle {
+        font-size: 1.3rem;
+    }
+
+    .modalContent {
+        width: 95%;
+        border-radius: 12px;
+    }
+
+    .mapContainer {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainTitle {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .routeDetails {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
