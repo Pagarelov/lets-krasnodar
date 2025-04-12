@@ -20,12 +20,12 @@
 .textContainer {
     flex: 1;
     padding: 40px;
-    margin-left: 20px;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(237, 221, 83, 1) 100%);
+    color: #000000;
 }
 
 .slideImage {

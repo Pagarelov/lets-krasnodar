@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import styles from './Vacation.module.css';
+import img31 from './Горный_курорт.jpg';
+import img32 from './Побережье.jpg';
 
 const Vacation = () => {
     const [selectedVacation, setSelectedVacation] = useState(null);
@@ -14,7 +16,7 @@ const Vacation = () => {
             id: 1,
             title: 'Горный курорт "Альпийские луга"',
             price: 'от 15 000₽/ночь',
-            image: '/img/alpine.jpg',
+            image: img31,
             description: 'Комфортабельные домики в горах с панорамным видом',
             contacts: '+7 (999) 123-45-67'
         },
@@ -22,8 +24,8 @@ const Vacation = () => {
             id: 2,
             title: 'Вилла на Черноморском побережье',
             price: 'от 25 000₽/ночь',
-            image: '/img/villa.jpg',
-            description: 'Элитный отдых в私人ной вилле с выходом к морю',
+            image: img32,
+            description: 'Элитный отдых в вилле с выходом к морю',
             contacts: '+7 (999) 765-43-21'
         },
         // Добавьте другие варианты
@@ -31,7 +33,6 @@ const Vacation = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Здесь можно добавить логику отправки данных
         console.log('Данные для бронирования:', formData);
         setSelectedVacation(null);
         alert('Ваша заявка принята! Мы свяжемся с вами в ближайшее время.');

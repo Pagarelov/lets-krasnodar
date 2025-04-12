@@ -31,7 +31,6 @@ const MapComponent = () => {
 
     return (
         <section className={`${styles.container} ${isMapExpanded ? styles.expanded : ''}`}>
-            {/* Блок с изображением и информацией */}
             {!isMapExpanded && (
                 <div className={styles.imageBlock}>
                     {activeLocation ? (
@@ -49,7 +48,7 @@ const MapComponent = () => {
                     ) : (
                         <>
                             <img
-                                src="/img/krasnodar-route.jpg"
+                                src="./krasnodar-route.png"
                                 alt="Маршрут"
                                 className={styles.mainImage}
                             />
@@ -61,7 +60,7 @@ const MapComponent = () => {
                                     <h3>Маршрут на квадрацикле</h3>
                                     <div className={styles.directions}>
                                         <span>↩ развернитесь</span>
-                                        <span>50 м</span>
+                                        <span>&nbsp;50 м</span>
                                     </div>
                                     <button className={styles.routeButton}>
                                         Проложить маршрут
