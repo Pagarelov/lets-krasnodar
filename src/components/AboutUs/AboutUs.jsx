@@ -17,7 +17,7 @@ const teamMembers = [
         id: 2,
         name: "Коновальцев Максим",
         role: "Backend Developer",
-        bio: "Специалист в области IT.",
+        bio: "Отвечает за северную часть",
         photo: maxim,
     },
     {
