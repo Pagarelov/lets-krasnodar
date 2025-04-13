@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    cursor: pointer;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+.logo {
+    font-size: 30px;
+    color: #4C7E80;
+    font-weight: 700;
+}
+.active {
+    font-weight: 800;
+    color: #1F4748;
+}
+.btn {
+    font-size: 30px;
+    background: #fff;
+    padding: 26px;
+    color: #1F4748;
+    border-radius: 15px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #1F4748;
+    color: #fff;
+    transition: ease 0.3s;
+
+}
+
+
+
+.header {
+    padding: 0 25px;
+    display: flex;
+    padding-top: 54px;
+}
+.container {
+    width: 1270px;
+    margin: 0 auto;
+}
+.header__nawbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nawbar {
+}
+.nawbar__navigation {
+
+}
+.header__right_menu {
+    display: flex;
+    gap: 30px;
+}
+.nawbar__list {
+}
+.nawbar__item {
+}
+.itm {
+}
+.nawbar__link {
+}
+.link {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #5c5c5c;
+    letter-spacing: .07em;
+
+}
+.list {
+    display: flex;
+    gap: 20px;
+}
+.header__language {
+}
+.language {
+}
+.language__list {
+}
+.language__item {
+}
+.link:hover {
+    color: #4C7E80;
+    font-weight: 700;
+    transition: ease 0.3s;
+}
+.header__offer {
+    margin-top: 77px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.header__image {
+    border-radius: 20px;
+    width: 50%;
+    background: url("../image/header.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.image__block {
+    padding: 15px 0;
+    width: 70%;
+    background: #fff;
+    border-radius: 15px;
+}
+.image__title {
+
+}
+.image__about {
+}
+.image__navigation {
+}
+
+
+.header__offer-text {
+    padding: 80px 44px;
+    width: 50%;
+    background: #6AAAAC;
+    border-radius: 20px;
+    position: relative;
+}
+.offer_info {
+    color: #fff;
+}
+.offer_title {
+    font-size: 50px;
+}
+.offer_paragrph {
+    font-size: 30px;
+    margin-top: 1.2em;
+}
+.offer__button {
+    margin-top: 65px;
+}
+
+.square1 {
+    width: 90px;
+    height: 90px;
+    background: #6AAAAC;
+    border: 10px solid #ECEBDF;
+    border-radius: 20px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+.square2 {
+    width: 70px;
+    height: 70px;
+    background: #6AAAAC;
+    border: 9px solid #ECEBDF;
+    border-radius: 20px;
+    position: absolute;
+    left: -9px;
+    bottom: -9px;
+}

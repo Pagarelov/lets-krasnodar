@@ -10,6 +10,7 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import './App.css';
 import PlacesList from "./components/PlacesList/PlacesList.jsx";
 import Vacation from "./components/Vacation/Vacation.jsx";
+import InfoComp from "./components/InfoComp/InfoComp.jsx";
 
 function App() {
     return (
