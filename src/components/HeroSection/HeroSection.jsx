@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styles from './HeroSection.module.css';
 
+
+
 const HeroSection = ({ id }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -9,10 +11,10 @@ const HeroSection = ({ id }) => {
         { image: '/img/img2.png', title: 'г.Сочи', description: 'Аренда Яхты' },
         { image: '/img/img3.png', title: 'г.Горячий Ключ', description: 'Ферма Альпак' },
         { image: '/img/img4.png', title: 'г.Сочи', description: 'Полет на вертолете' },
-        { image: '/img/img5.png', title: 'г.Краснодар', description: 'Дайвинг' },
-        { image: '/img/img6.png', title: 'г.Анапа', description: 'Парапланеризм' },
-        { image: '/img/img7.png', title: 'г.Геленджик', description: 'Дельфинарий' },
-        { image: '/img/img8.png', title: 'г.Туапсе', description: 'Рафтинг' },
+        { image: '/img/img5.jpg', title: 'г.Краснодар', description: 'Дайвинг' },
+        { image: '/img/img6.jpg', title: 'г.Анапа', description: 'Парапланеризм' },
+        { image: '/img/img7.jpg', title: 'г.Геленджик', description: 'Дельфинарий' },
+        { image: '/img/img8.jpg', title: 'г.Туапсе', description: 'Рафтинг' },
     ];
 
     const visibleSlides = 4;

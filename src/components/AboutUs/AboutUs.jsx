@@ -1,4 +1,9 @@
 import styles from "./AboutUs.module.css";
+import vova from './vova.jpg';
+import maxim from './maxim.jpg';
+import lesha from './lesha.jpg';
+import andrey from './andrey.jpg';
+import lera from './lera.jpg';
 
 const teamMembers = [
     {
@@ -6,35 +11,35 @@ const teamMembers = [
         name: "Пагарелов Владимир",
         role: "Frontend Developer",
         bio: "Специалист в области веб-технологий.",
-        photo: "/images/team/ivan.jpg",
+        photo: vova,
     },
     {
         id: 2,
         name: "Коновальцев Максим",
         role: "Backend Developer",
         bio: "Специалист в области IT.",
-        photo: "/images/team/maria.jpg",
+        photo: maxim,
     },
     {
         id: 3,
         name: "Алексей Жилин",
         role: "Design",
-        bio: "",
-        photo: "/images/team/alexey.jpg",
+        bio: "Спикер.",
+        photo: lesha,
     },
     {
         id: 4,
         name: "Валерия Яцук",
         role: "Дизайнер UX/UI",
         bio: "Создаёт интуитивно понятные интерфейсы.",
-        photo: "/images/team/olga.jpg",
+        photo: lera,
     },
     {
         id: 5,
         name: "Андрей Авакимов",
         role: "Team Lead",
-        bio: "",
-        photo: "/images/team/olga.jpg",
+        bio: "Тимлид и мотиватор.",
+        photo: andrey,
     },
 ];
 

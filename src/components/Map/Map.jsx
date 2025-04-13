@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Map.module.css';
 
+
 const MapComponent = () => {
     const [activeLocation, setActiveLocation] = useState(null);
     const [isMapExpanded, setIsMapExpanded] = useState(false);
@@ -35,11 +36,7 @@ const MapComponent = () => {
                 <div className={styles.imageBlock}>
                     {activeLocation ? (
                         <>
-                            <img
-                                src={activeLocation.image}
-                                alt={activeLocation.title}
-                                className={styles.mainImage}
-                            />
+
                             <div className={styles.overlay}>
                                 <h2>{activeLocation.title}</h2>
                                 <p>{activeLocation.description}</p>
@@ -47,11 +44,7 @@ const MapComponent = () => {
                         </>
                     ) : (
                         <>
-                            <img
-                                src="./krasnodar-route.png"
-                                alt="Маршрут"
-                                className={styles.mainImage}
-                            />
+
                             <div className={styles.overlay}>
                                 <h2>Даже лучше, чем в Дубаи</h2>
                                 <p>Планируйте свой идеальный отпуск в Краснодарском крае</p>

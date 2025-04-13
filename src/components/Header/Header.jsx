@@ -53,18 +53,6 @@ const Header = () => {
                     </ScrollLink>
 
                     <ScrollLink
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className={styles.link}
-                        onClick={closeMenu}
-                    >
-                        О нас
-                    </ScrollLink>
-
-                    <ScrollLink
                         to="tours"
                         spy={true}
                         smooth={true}
@@ -86,6 +74,18 @@ const Header = () => {
                         onClick={closeMenu}
                     >
                         Отдых
+                    </ScrollLink>
+
+                    <ScrollLink
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className={styles.link}
+                        onClick={closeMenu}
+                    >
+                        О нас
                     </ScrollLink>
 
 
